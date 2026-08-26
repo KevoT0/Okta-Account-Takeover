@@ -34,13 +34,7 @@ Threat intelligence indicated that stolen Okta credentials for the organisation 
 
 Rather than starting from an alert, I baselined *where each user normally logs in from* by counting successful sign-ins per user, per country.
 
-<p align="center">
-  <img src="https://github.com/KevoT0/Okta-Account-Takeover/blob/main/3.png" alt="Baseline hunt showing mirage from RU" width="700">
-</p>
-
-<p align="center">
-  <img src="https://github.com/KevoT0/Okta-Account-Takeover/blob/main/4.png" alt="Baseline hunt showing mirage from RU" width="700">
-</p>
+![Baseline hunt showing mirage logging in from RU against an all-US baseline](https://github.com/KevoT0/Okta-Account-Takeover/blob/main/3.png)
 
 ```KQL
 OktaV2_CL
@@ -72,6 +66,8 @@ OktaV2_CL
 | project TimeGenerated, ActorDisplayName, EventMessage
 | order by TimeGenerated asc
 ```
+
+![Baseline hunt showing mirage logging in from RU against an all-US baseline](https://github.com/KevoT0/Okta-Account-Takeover/blob/main/4.png)
 
 ---
 
