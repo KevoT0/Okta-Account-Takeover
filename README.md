@@ -67,7 +67,7 @@ OktaV2_CL
 | order by TimeGenerated asc
 ```
 
-![Baseline hunt showing mirage logging in from RU against an all-US baseline](https://github.com/KevoT0/Okta-Account-Takeover/blob/main/4.png)
+![mirage's attack chain: super admin grant, API token creation, MFA manipulation](https://github.com/KevoT0/Okta-Account-Takeover/blob/main/4.png)
 
 ---
 
