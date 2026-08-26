@@ -10,7 +10,7 @@
 
 While hunting for signs of credential compromise across Okta sign-in data, I identified a single user account authenticating from a country that broke the organisation's baseline. Pivoting on that account surfaced a full account-takeover chain executed from Russia against a US-based tenant: the attacker seized super-admin privileges, planted their own MFA and an API token for persistence, and dismantled the legitimate users' MFA. All actions were recorded within the same second, indicating scripted rather than manual activity.
 
-**Verdict:** True positive — active, in-progress tenant compromise. Critical severity.
+**Verdict:** True positive active, in-progress tenant compromise. Critical severity.
 
 ---
 
@@ -33,6 +33,8 @@ Threat intelligence indicated that stolen Okta credentials for the organisation 
 ### Step 1 — Establish the baseline
 
 Rather than starting from an alert, I baselined *where each user normally logs in from* by counting successful sign-ins per user, per country.
+
+![Baseline hunt showing mirage logging in from RU against an all-US baseline](https://github.com/KevoT0/Okta-Account-Takeover/blob/main/3.png)
 
 ```KQL
 OktaV2_CL
