@@ -38,6 +38,10 @@ Rather than starting from an alert, I baselined *where each user normally logs i
   <img src="https://github.com/KevoT0/Okta-Account-Takeover/blob/main/3.png" alt="Baseline hunt showing mirage from RU" width="700">
 </p>
 
+<p align="center">
+  <img src="https://github.com/KevoT0/Okta-Account-Takeover/blob/main/4.png" alt="Baseline hunt showing mirage from RU" width="700">
+</p>
+
 ```KQL
 OktaV2_CL
 | where EventResult == "Success"
