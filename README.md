@@ -126,4 +126,10 @@ The critical insight driving the response order: **a password reset alone does n
 
 ## Skills demonstrated
 
-Threat hunting with KQL · Behavioural baselining · Pivot investigation · Attack-chain reconstruction · Identity-first incident response · MITRE ATT&CK mapping · Okta / cloud identity security
+· Threat hunting with KQL 
+· Behavioural baselining 
+· Pivot investigation 
+· Attack-chain reconstruction 
+· Identity-first incident response 
+· MITRE ATT&CK mapping 
+· Okta / cloud identity security
